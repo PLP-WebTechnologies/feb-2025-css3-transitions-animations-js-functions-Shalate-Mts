@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDev - Week 7: Bake Off</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Merienda:wght@300..900&display=swap" rel="stylesheet">  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h2>Dough to Delight</h2>
+    <h3>Bake It 'Til You Make It!</h3>
+    <p>Let's begin by adding our ingredients</p>
+    <div id="ingredients">
+      <button class="ingredient" data-ingredient="🍚">Add Flour</button>
+      <button class="ingredient" data-ingredient="🍬">Add Sugar</button>
+      <button class="ingredient" data-ingredient="🧈">Add Butter</button>
+      <button class="ingredient" data-ingredient="🥚">Add Egg</button>
+    </div>
+    <div id="mixing-bowl">
+      <p>Inside our Bowl: <span id="ingredient-list">None</span></p>
+    </div>
+    <button id="mixBtn" class="hidden">Mix Ingredients</button>
+    <button id="bakeBtn" class="hidden">Bake Cookies</button>
+    <div id="timer"></div>
+    <div id="popup" class="hidden">
+      
+      <p>Yaaay, Let's enjoy our cookies...!</p>
+      <video id="eat_cake" width="320" height="240" controls autoplay muted>
+        <source src="res/eat_cake.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button id="closePopup">Close</button>
+    </div>
+    <button id="restartBtn">Restart Game</button>
+  </div>
+  <div id="overlay" class="hidden"></div>
+  <script src="script.js"></script>
+</body>
+</html>
